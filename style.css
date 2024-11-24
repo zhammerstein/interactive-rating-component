@@ -1,0 +1,235 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('https://fonts.google.com/specimen/Overpass');
+}
+
+
+
+body{
+    font-family: 'Overpass';
+    margin:0;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container{
+    max-width: 23.5rem;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    background-image: radial-gradient(circle at top, hsl(213, 19%, 18%),hsl(212, 21%, 13%) 15rem);
+    border-radius: 1rem;
+    padding:26px;
+}
+
+.thankyou-container{
+    max-width: 23.5rem;
+    display:none;
+    flex-direction: column;
+    text-align: left;
+    background-image: radial-gradient(circle at top, hsl(213, 19%, 18%),hsl(212, 21%, 13%) 15rem);
+    border-radius: 1rem;
+    padding:26px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:16px;
+}
+
+button{
+    border:none;
+    border-radius:100%;
+    min-height: 3rem;
+    min-width:3rem;
+    cursor: pointer;
+    color:hsl(217, 12%, 63%);
+    font-weight:400;
+    font-size:0.9375rem;
+    background-color: hsl(213, 19%, 18%);
+    justify-content: center;
+    align-items: center;
+    margin-top:8px;
+}
+
+.selected{
+  background-color: hsl(25, 97%, 53%);
+    color:black;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(25, 97%, 53%);
+    color:black;
+    cursor: pointer;
+}
+
+
+button:active{
+    background-color: white;
+    color:black
+
+}
+
+#submit{
+    margin-top:32px;
+    display:flex;
+    max-height:2rem;
+    border-radius:0%;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 0%);
+    font-weight:400;
+    font-size:0.9375rem;
+    border-radius: 5rem;
+}
+
+#submit:active{
+    background-color: white;
+    color:black
+}
+
+h1{
+    color:white;
+    font-weight: 700;
+    font-size:1.8rem;
+}
+
+h2{
+  color:white;
+  font-weight: 700;
+  font-size:1.6rem;
+  margin-top:36px;
+  margin-bottom: 16px;
+}
+
+p{
+    color:hsl(217, 12%, 63%);
+    font-weight:400;
+    font-size:0.9375rem;
+}
+
+#star{
+    display:flex;
+}
+
+#circle{
+    display:flex;
+    width:fit-content;
+    padding:1rem;
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 18%);
+    margin-bottom:1.5rem;
+}
+
+p1{
+  color: hsl(25, 97%, 43%);
+  margin-top:5px;
+}
+
+#ellipse{
+  background-color: hsl(213, 19%, 18%);
+  display:flex;
+  padding: 0.3rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  border-radius: 5rem;
+  margin-top: 24px;
+}
+
+p2{
+  color:hsl(217, 12%, 63%);
+    font-weight:400;
+    font-size:0.9375rem;
+    margin-bottom: 16px;
+}
+
+
+#thankyou{
+  margin-top:16px;
+}
