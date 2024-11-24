@@ -6,8 +6,12 @@ const thankyoucontainer = document.getElementsByClassName("thankyou-container")[
 submitbutton.addEventListener("click", submit);
 
 function submit() {
+    if (selectedValue === null){
+        container.style.display = "flex";
+    }else{
     container.style.display = "none"; 
     thankyoucontainer.style.display = "flex"; 
+}
 }
 
 for (let i = 0; i < ratebutton.length; i++) {
